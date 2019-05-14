@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Salon M</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Noto+Serif:700|Lato" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+ 
+    
+  </head>
+
+  <body>
+  <div class="navbar-div">
+  <a id="navbar" href=#>
+  <span></span>
+  <span></span>
+  <span></span>
+</a>
+
+<nav>
+<div id="nav-list">
+<a onclick="location.href='<%= url('/')%>'">HOME</a>
+<a onclick="location.href='<%= url('/appointment')%>'">APPOINTMENTS</a>
+<a onclick="location.href='<%= url('/policy')%>'">SPA POLICIES</a>
+<a onclick="location.href='<%= url('/tribeca')%>'">TRIBECA</a>
+<a onclick="location.href='<%= url('/uws')%>'">UWS</a>
+
+</div>
+</nav>
+
+<code>
+  clicking on "a" toggles class "open" on "a"
+</code>
+
+</div>
+
+
+<div  class = "topnav-div">
+<div id="name" onclick="location.href='<%= url('/')%>'"><p id="salon">SALON</p><p id="m"> M</p></div>
+<div class="desktop-nav"> 
+<div onclick="location.href='<%= url('/')%>'">Home</div>
+<div onclick="location.href='<%= url('/appointment')%>'">Appointments</div>
+<div onclick="location.href='<%= url('/policy')%>'">Spa Policies</div>
+<div onclick="location.href='<%= url('/tribeca')%>'">Tribeca</div>
+<div onclick="location.href='<%= url('/uws')%>'">UWS</div>
+
+</div>
+</div>
+
+<div class="policy-img-div"><img src="http://i63.tinypic.com/11h56dw.jpg"></div>
+<div class="sections">
+
+  <div id="policy-div">
+  <div id="appt-title" class="policy-title">SPA POLICIES</div>
+  <div id="policy-list">
+<p class="list">Loud conversations, use of cellphone are prohibited</p>
+​
+<p class="list">Only Salads or pastries will be allowed</p>
+​
+<p class="list">No pets, including emotional support animals</p>
+​
+<p class="list">Same time manicure or massage are based on availability</p>
+​
+​
+<p class="list">We only accept cash for gratuity</p>
+<p class="small-font">20% service charge will be added to a party of two or more</p>
+ 
+<p class="list">Reservations will be considered a walk-in when late</p>
+​
+<p class="list">We are not responsible for any left behind, lost, stolen personal items</p>
+
+​
+<p class="list">We require a credit card for reservations.</p>
+<p class="small-font">There will be a charge of $30 per person on the credit card provided, if you cancel or decrease in number, including service, on the day of your reservation.</p>
+
+</div>
+</div>
+</div>
+
+<div id="space">
+</div>
+
+<div class="footer">
+<div><i class="fab fa-instagram fa-lg"></i></div>
+<p>salonmnyc@salonmnyc.com</p>
+<p>Tribeca (212)966-3445 | UWS (212)757-1557</p>
+<p>&#169; 2019 Salon M. All Rights Reserved</p>
+</div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

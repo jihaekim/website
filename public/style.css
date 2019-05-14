@@ -1,0 +1,525 @@
+body{
+   font-family: "Baskerville", sans-serif;
+   font-weight: lighter;
+    margin:0;
+  }
+ h3{
+  font-weight: lighter;
+  font-size: 1.5em;
+ }
+.cash{
+  text-align: center;
+}
+  /* logo */
+  #salon{
+  font-family: 'Lato', sans-serif;
+  font-weight:lighter;
+  }
+  
+  #m{
+    font-family: 'Noto Serif', serif;
+    color:red;
+  }
+  #header{
+    display:flex;
+  }
+  #name{
+     text-align: center;
+     font-size: 1.8em;
+     padding-top: 5%;
+     padding-bottom: 6%;
+     /* box-shadow: 0 4px 2px -2px rgb(211, 208, 208); */
+     border-bottom: 1px solid #ece7e7;
+  }
+  #name p{
+    display:inline;
+  }
+  
+  /* hamburger nav css */
+  #navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 11px 0 0 9px;
+    tap-highlight-color: transparent;
+  }
+  span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: rgb(0,40,60);
+    transition: .7s;
+    pointer-events: none;
+  }
+  span:nth-child(2) {
+    margin: 3px 0;
+  }
+  .open {
+    border-color: rgba(255,255,255,.2);
+  }
+  .open span {
+    background:black;
+  }
+  .open :first-child {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  .open :nth-child(2) {
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+  .open :last-child {
+    transform: translateY(-5px) rotate(-135deg);
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background:white;
+    transform: translateX(-100%);
+    transition: .5s;
+  }
+  .open + nav {
+    transform: none;
+  }
+  code {
+    color: transparent;
+    font-size: 0;
+  }
+  /* end of nav css */
+  
+
+  /* nav menu inside */
+  #nav-list{
+    margin-top: 100px;
+    display:flex;
+    flex-direction:column;
+    margin-left: 13%;
+    font-family: 'Lato', serif;
+  }
+  #nav-list a{
+    text-decoration: none;
+    color:black;
+    height:35px;
+    font-size:.9em;
+  }
+  
+  
+  /* center img */
+  .main-img{
+    padding-top: 2%;
+  }
+  .img-div{
+    /* width: 355px; */
+    /* height: 235px; */
+    margin:0 auto;
+    /* padding-top:15px; */
+  
+  }
+  .img-div img{
+    width:100%;
+    height:100%;
+  }
+  
+  /*location section */
+  .title{
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  
+  .info-div{
+    padding: 10%;
+    font-size: 1.25em;
+    line-height: 2.5;
+    text-align: center; 
+    color: #707070;
+  
+  }
+  .loc-card-div{
+    height: 235px;
+    width: 345px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .loc-card-div img{
+    width:100%;
+    height:100%;
+  }
+  .loc-address{
+    text-align: center;
+  }
+  
+  .address{
+    margin: 5px;
+  }
+  .loc-name{
+    margin-bottom: 10px;
+    color:#707070;
+  }
+  #location-div{
+    padding-top: 15%;
+    color:#707070;
+  }
+ 
+.tri-menu-div{
+  color:#707070;
+  margin: 30px;
+}
+
+
+
+  #about{
+    font-size: 1.1em;
+  }
+  .learn-btn{
+    font-size: .9em;
+    border: 2px solid #707070;
+    background-color: transparent;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #707070;
+  }
+
+  #uws-loc{
+      padding-top:100px;
+  }
+ #policy-div{   
+      padding-top: 50px;
+      width: 290px;
+      margin: 0 auto;
+      text-align: left;
+      color:#707070;
+    }
+
+    .policy-title{
+      padding-bottom: 35px;
+      font-size: 1.5em;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    #policy-list{
+        font-size:1.1em;
+    }
+    .list{
+        margin-bottom: 0;
+    }
+
+    .small-font{
+        margin-top: 0;
+        font-size: .9em;
+        margin-bottom: 35px;
+    }
+
+p.hours{
+  font-size:.9em;
+}
+h3.hours{
+  font-size:.95em;
+}
+
+#hours-div{
+  padding-top:15%;
+}
+
+
+
+  #space{
+  height:150px;
+  }
+  
+  /* footer */
+.footer{
+  background-color: #ece8e8;
+    height: 170px;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 90px;
+    text-align: center;
+    padding-top: 38px;
+}
+
+.appt-img{
+  height: 345px;
+  width: 345px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.appt-img img{
+  height:100%;
+  width:100%;
+}
+
+.appt-info{
+  margin:40px;
+  color:#707070;
+}
+
+.appt-info p{
+  line-height: 2;
+}
+.policy-img-div img{
+  width: 100%;
+  height: 100%;
+ }
+
+.read-btn{
+  font-size: 1.1em;
+  background-color: #eae5e5;
+  padding: 10px 15px;
+
+  margin-top: 10px;
+  color:#707070;
+  border: none;
+}
+/* appt page */
+.appt-container{
+  color:#707070;
+}
+.appt-title{
+  font-size: 1.5em;
+  color: #707070;
+  text-align: center;
+  font-family: "Baskerville", sans-serif;
+  font-weight: lighter;
+  padding-top: 30px;
+}
+.appt-img-div{
+  height: 200px;
+  margin: 0 auto;
+}
+.appt-img-div img{
+  width:100%;
+  height:100%;
+}
+.info-par{
+  margin: 0 40px;
+  line-height: 2;
+}
+
+.num-div{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cancel{
+  margin-top: 70px;
+  padding-bottom: 0;
+  margin-bottom: 40px;
+}
+
+.desktop-nav{
+  display:none;
+}
+#title-appt{
+  padding-top: 30px;
+}
+
+.main-img{
+padding-top:0;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.footer{
+  height:500px;
+}
+.img-div{
+  height: 430px;
+}
+  }
+
+  /* desktop */
+  @media only screen and (min-width: 768px) {
+    .navbar-div{
+      display:none;
+    }
+    #name {
+      padding-top: 2%;
+      padding-bottom: 2%;
+      text-align: left;
+      border-bottom: none;
+      padding-left:2%;
+    }
+
+      .desktop-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 500px;
+        margin-top: 3%;
+        margin-left: 47%;
+        color: #707070;
+        font-size: .96em;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+    .topnav-div {
+      display: flex;
+      border-bottom: 1px solid #ece7e7;
+      background: white;
+      position: fixed;
+      width: 100%;
+  }
+    .img-div{
+      height: UNSET;
+    }
+    .main-img{
+      padding-top:0;
+    }
+    .info-div{
+      padding:5%;
+      width: 60%;
+      margin: 0 auto;
+      padding-bottom: 3%;
+      padding-top: 1%;
+    }
+    .info-par {
+      line-height: 2;
+      width: 980px;
+      margin: 0 auto;
+      font-size: 1.4em;
+    }
+
+    #about {
+      font-size: 1.4em;
+    }
+    .num-div {
+      margin-top: 80px;
+      text-align: center;
+  }
+    .appt-img{
+      height: 500px;
+      width: 500px;
+      margin-left: 5%;
+      padding-top: 40px;
+    }
+    .appt-title{
+      padding-top: 40px;
+    }
+    .appt-info{
+      color: #707070;
+      flex-shrink: 100;
+      margin-right: 150px;
+      margin-left: 60px;
+    }
+   .sections{
+     display:flex;
+     padding-top: 60px;
+     font-family: sans-serif;
+   }
+   #uws-loc {
+    padding-top: 40px;
+   }
+   #location-div{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top:10%;
+   }
+   .loc-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+   }
+   .title{
+     margin-left:0;
+    margin-bottom: 60px;
+    text-align: center;
+   }
+
+   .appt-img-div {
+    height: 700px;
+   }
+   #policy-div {
+    padding-top: 0;
+    width: 100%;
+    /* margin: 0 auto; */
+    /* text-align: left; */
+    color: #707070;
+   
+}
+.policy-title{
+  text-align: center;
+  letter-spacing: 3px;
+  font-size:3em;
+ }
+ #policy-list{
+  font-size: 1.7em;
+  width: 650px;
+  margin: 0 auto;
+ }
+ .policy-img-div{
+   height:700px;
+ }
+
+ .policy-img-div img{
+  width: 100%;
+  height: 100%;
+ }
+#title-appt{
+  padding-top:200px;
+}
+.appt-container{
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+.tri-menu-div{
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  padding-top:50px;
+}
+.tri-menu-div h3{
+  font-weight: bold;
+  padding-top:25px;
+}
+  }
+
+  @media only screen and (min-width: 600px)and (max-device-width : 768px) {
+   .desktop-nav{
+    margin-left: 11%;
+   }
+   .appt-info{
+    flex-shrink: 3;
+    margin-right: 30px;
+   }
+   .appt-img {
+    height: 400px;
+   }
+   #location-div{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+   .loc-card-div {
+    height: 200px;
+    width: 300px;
+   }
+   .info-par {
+    line-height: 2;
+    width: unset;
+    margin: 30px;
+   }
+
+   .policy-img-div {
+    height: unset;
+}
+   
+.tri-menu-div {
+  width: 650px;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: sans-serif;
+  padding-top: 50px;
+}
+#uws-menu-div{
+  margin-left: 250px;
+}
+  } 
